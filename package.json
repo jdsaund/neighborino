@@ -2,8 +2,9 @@
   "name": "neighborino",
   "version": "1.0.0",
   "description": "A data structure optimised for distributed k-nearest neighbour search",
-  "main": "index.js",
+  "main": "index.node",
   "scripts": {
+    "build": "cargo build --release && mv ./target/release/libneighborino.so ./index.node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
